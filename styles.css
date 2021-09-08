@@ -111,6 +111,7 @@ button:hover, button:active {
   justify-content: space-between;
   display: none;
   width: 10%;
+  z-index: -1;
   
  
 }
@@ -205,7 +206,7 @@ border-radius: 10px;
   }
 
 .kontent{
-  top:56px;
+  top:80px;
   margin-top: 15%;
   margin-left: 8%;
   margin-right:8% ;
@@ -227,7 +228,6 @@ border-radius: 10px;
   background-color: rgba(203 203, 203, 0.788);
   text-align: left;
   padding: 20px 0;
-  font-size: 1.5vw;
   position: relative;
 }
 
