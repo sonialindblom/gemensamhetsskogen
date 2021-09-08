@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   font-family: Poppins;
+  color: #656565;
    
 }
 
@@ -320,7 +321,6 @@ left: 0;
     align-items: left;
     position: relative;  
     padding: 0 10px;
-    width: 100%;
     flex-direction: row;
     display:inline-block;
     min-height: none;
@@ -330,11 +330,18 @@ left: 0;
   display:none;
 }
 
+h1{
+  font-size: 2vw;
+}
 
-
+.logo{
+  width: 60%;
+  overflow: hidden;
+  font-size: h2;
+}
 #listan{
   display: none;
-  width: 100%;
+  width: 10%;
   flex-direction: column;
   padding: 0 20px;
   position: absolute;
@@ -342,6 +349,8 @@ left: 0;
   top: 50px;
   background-color: white;
   z-index: -1;
+  right: 10;
+  overflow: hidden;
 }
 
 
@@ -359,9 +368,9 @@ header{
    width: 15%;
    float: right;
    margin-right: 0 ;
-   position: absolute;
+   position: fixed;
    right: 5px;
-   top:46px;
+   top:56;
    
   
  }
@@ -380,7 +389,7 @@ header{
   display: inline-block;
   overflow: visible;
   flex-direction: column;
-  width: 100%;
+  right: 10;
   }
 
 .dropbtn{
