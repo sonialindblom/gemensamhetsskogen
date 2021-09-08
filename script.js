@@ -14,8 +14,8 @@ class Myheader extends HTMLElement{
             <div class="bar"></div>
           
         </div> 
-          <a href="index.html" class="logo">
-            Gemensamhetsskog <br> Billingen</a>
+           <h1><a href="index.html" class="logo">
+            Gemensamhetsskog <br> Billingen</a></h1>
               
           </div > 
           <div id="myDIV">
