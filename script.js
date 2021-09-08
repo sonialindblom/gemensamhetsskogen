@@ -6,7 +6,7 @@ class Myheader extends HTMLElement{
         <header>
         <div class="logo"> 
   
-        <div class="toggleBtn" onclick="fToggleBtn()" >
+        <div class="toggleBtn" onclick="openNav()" >
             <div class="bar"></div>
             
             <div class="bar"></div>
@@ -19,6 +19,7 @@ class Myheader extends HTMLElement{
               
           </div > 
           <div id="myDIV">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <ul  id="listan" class="nav_links">
                           <li>        
                             <div class="dropdown" >
@@ -176,3 +177,33 @@ function fToggleBtn(){
      x.style.display = "none";
    }
  }
+
+ /*  sidebar */
+
+ function openNav() {
+  document.getElementById("listan").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("listan").style.width = "0";
+}
+
+
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+
+function dropdown(){ alert(2321321321321)}
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}

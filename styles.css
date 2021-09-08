@@ -94,6 +94,9 @@ button{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.closebtn{
+  display: none;
+}
 
 button:hover, button:active {
   background-color: white;
@@ -108,15 +111,12 @@ button:hover, button:active {
 
 
 .toggleBtn{
-  position: absolute;
-  flex-direction: column;
-  justify-content: space-between;
   display: none;
   width: 10%;
   z-index: -1;
-  
+ }
+
  
-}
 
 .toggleBtn .bar{
 height: 4px;
@@ -315,44 +315,82 @@ left: 0;
 }
 /* small screens */
 @media screen and (max-width:700px) {
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;}
+
   /*block instead of inline when small screen */
   #listan li{ 
-    /* display: none; */
-    align-items: left;
-    position: relative;  
     padding: 0 10px;
-    flex-direction: row;
-    display:inline-block;
-    min-height: none;
-   }
+    flex-direction: column;
+    display: grid;
+    position:static;
+    }
 
-.inactive{ /* working */
-  display:none;
-}
+  .inactive{ /* working */
+   display:none;
+  }
 
 h1{
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .logo{
   width: 60%;
-  overflow: hidden;
-  font-size: h2;
+  line-break: strict;
+
 }
-#listan{
-  display: none;
-  width: 10%;
-  flex-direction: column;
-  padding: 0 20px;
-  position: absolute;
-  justify-content: space-between  ;
-  top: 50px;
-  background-color: white;
-  z-index: -1;
-  right: 10;
-  overflow: hidden;
+.nav_links{
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color:rgba(0, 128, 0, 0.171);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+ }
+
+
+ .nav_links a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  transition: 0.3s;
+  position: relative;
+
 }
 
+button{
+  line-break: loose;
+}
+
+.nav_links a:hover{
+  color: #3e8e41;
+
+}
+
+.nav_links .closebtn{
+  position: absolute;
+  top: 40px;
+  right: 220px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:green;
+  display: flex;
+}
+
+
+ .nav_links li:nth-child(4){
+   padding-right: 1rem;
+  }
+ 
 
 
 header{
@@ -368,9 +406,12 @@ header{
    width: 15%;
    float: right;
    margin-right: 0 ;
-   position: fixed;
-   right: 5px;
-   top:56;
+   right: 12px;
+   top:80;
+   z-index: -1;
+   position: absolute;
+   flex-direction: column;
+   justify-content: space-between;
    
   
  }
@@ -383,23 +424,25 @@ header{
   
 }
 
-/* set dropdown menu */
+
+/* 
+*-- set dropdown menu --*
 .dropdown {
   position: absolute;
-  display: inline-block;
+  display: block;
   overflow: visible;
   flex-direction: column;
-  right: 10;
+  justify-content: right;
   }
-
+*/
 .dropbtn{
   flex-direction: column;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  background-color: white;
+  justify-content: right;
+  display: block;
+  color: 656565;
+  
 
-}
+} 
 
 
 
@@ -411,25 +454,23 @@ nav{
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  justify-content: space-between;
+  display:none;
+/*   justify-content: right;
   position: fixed;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   transition:all 0.3s ease-in-out;
-  width:  100%;
-  align-items: center;
+  align-items: right;
   font-size: 2vw;
-  background-color: white;
-  }
+  position: relative; 
+  padding-left: 150px; */
+  } 
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
-    padding: 10px 10px;
-    font-size: 1.5vw;
     overflow: visible;
-    display: inline-block;
+    display: block;
     position: relative;
-    background-color: white;
+ 
   }
 
   
@@ -442,19 +483,20 @@ nav{
    /* Show the dropdown menu on hover */
    .dropdown:hover .dropdown-content {
      display: flex; 
-     flex-direction: row;
-     justify-content: center;
-    position: relative;  
-    background-color:rgba(0, 128, 0, 0.301);
+     flex-direction: column;
+     justify-content: right;
+    position: absolute;  
     right: 10px;
+    background-color: rgb(224, 238, 221);
+    padding-left: 150px;
+    
     
      }
    
    /* Change the background color of the dropdown button when the dropdown content is shown */
     .dropdown:hover .dropbtn:hover {
-      color: #3e8e41; 
       text-decoration:green;
-      background-color: white;
+     
     }
 
 
@@ -486,6 +528,11 @@ padding: 10;
     */
 }
 
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
 
 /* MENU IN FOOTER */
 

@@ -7,33 +7,40 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script1.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
   </head>
   <body>
-  <myheader></myheader>
+  
     <header>
+
+      <button onclick="dropdown()"> Hi</button>
+
       <div class="logo"> 
 
-      <div class="toggleBtn" onclick="fToggleBtn()" >
+        
+        <div class="toggleBtn" onclick="openNav()" >
           <div class="bar"></div>
           
           <div class="bar"></div>
           
           <div class="bar"></div>
         
-      </div> 
+        </div>
+      
         <a href="index.html" class="logo">
-          Gemensamhetsskog <br> Billingen</a>
+         <h1> Gemensamhetsskog <br> Billingen</a></h1>
             
         </div > 
         <div id="myDIV">
-        <ul  id="listan" class="nav_links">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+        <ul  id="listan" class="sidenav">
                         <li>        
                           <div class="dropdown" >
-                                <a class="dropbtn" href="projektet.html" >Om Projektet</a>
-                                <div class="dropdown-content">
-                                  <a href="aktuellt.html"  >aktuellt</a>
+                                <span class="dropdown-btn">Om Initiativet  <i class="fa fa-caret-down"></i></span>
+                                <div class="dropdown-container">
+                                  <a href="aktuellt.html"  >aktuellt </a>
                                   <a href="iMedia.html"  >i media</a>
                                   <a href="">nästa steg</a>
                                   <a href="QA.html"  >Frågor & svar</a>
@@ -43,8 +50,8 @@
                         </li>
                         
                         <li> <div id="dropdown"  class="dropdown" >
-                            <a class="dropbtn" href="Fakta.html "  >Fakta</a>
-                           <div class="dropdown-content">
+                          <span class="dropdown-btn">Fakta  <i class="fa fa-caret-down"></i></span>
+                           <div class="dropdown-container">
                               <a href="FaktaStyrdokument.html">Styrdokument</a>
                               <a href="FaktaLknProjekt.html"> linkande projekt</a>
                               <a href="#">plantageskog</a>
@@ -52,22 +59,23 @@
                             </div>
                           </div></li>
                         <li> <div class="dropdown">
-                             <a href="OmOss.html" class="dropbtn" > Om Oss</a>
-                            <div class="dropdown-content">
-                              <a href="OmOss.html" target="iframe2">Vem är vi</a>
+                          <span class="dropdown-btn">Om Oss  <i class="fa fa-caret-down"></i></span>
+                            <div class="dropdown-container">
+                              <a href="OmOss.html">Vem är vi</a>
                               <a href="#">På sociala media</a>
                             </div>
                           </div></li>
                         <li>  
-                      <div class="dropdown">
-                        
-                      <a href="index.html"  class="dropbtn" >Hem</a>
-                      </div> </li> 
+                          <span class="dropdown-btn" href="index.html">Hem   </span> 
+                        </li> 
           </ul>
         </div>
     
                             
        <a  class="cta" href="https://bit.ly/Billingen"> <button> till namninsamling</button></a>
+
+
+
      
       </header>
   
