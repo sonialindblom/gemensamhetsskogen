@@ -145,7 +145,7 @@ border-radius: 10px;
 
 
 
-.dropbtn{
+.dropdown-btn{
   display: block;
 }
 /* Dropdown Content (Hidden by Default) */
@@ -171,7 +171,7 @@ border-radius: 10px;
    .dropdown-content a:hover {background-color: rgb(224, 238, 221);}
   
    /* Show the dropdown menu on hover */
-   .dropdown:hover .dropdown-content { align-items: center;display: inline-block;}
+   .dropdown:hover .dropdown-container { align-items: center;display: inline-block;}
    
    /* Change the background color of the dropdown button when the dropdown content is shown */
     .dropdown:hover .dropbtn:hover {text-decoration:green;}
@@ -435,7 +435,7 @@ header{
   justify-content: right;
   }
 */
-.dropbtn{
+.dropdown-btn{
   flex-direction: column;
   justify-content: right;
   display: block;

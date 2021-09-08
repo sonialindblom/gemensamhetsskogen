@@ -189,7 +189,32 @@ function closeNav() {
 }
 
 
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *** Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict ***
 
 function dropdown(){ alert(2321321321321)}
 
@@ -207,3 +232,4 @@ for (i = 0; i < dropdown.length; i++) {
   }
   });
 }
+ */
