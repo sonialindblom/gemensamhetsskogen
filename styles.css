@@ -1,0 +1,555 @@
+/* get font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/*override everything */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+   
+}
+
+body{
+  margin: 20px;
+  padding:0%;
+}
+
+
+
+/*format font in header*/
+header li, a, button{
+  font-weight: 300;
+  color: 656565;
+  text-decoration: none;
+ 
+  
+}
+/* adjust menu to right and logo to left */
+header{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  top:0px;
+}
+
+
+/* get logoText to left */
+.logo{
+  cursor: pointer;
+  font-size: 2.5vw ;
+  font-weight: 800;
+  font-family: Poppins;
+  margin-right: auto;
+}
+
+
+/* distribute navlinks in line */
+.nav_links li{ 
+ display: inline-block;
+ font-size: 1.5 vw;
+ min-height: 3vh;
+ margin-top:14px;;
+}
+.nav_links li:nth-child(4){
+  padding-right: 1rem;
+ }
+
+
+
+
+/*transition to navlinks*/
+.nav_links a {
+    transition: all 0.3s ease 0s;
+}
+
+a:visited {
+  color: #656565;
+  text-decoration: none;
+}
+
+.nav_links a:hover {
+  transition: all 0.3s ease 0s;
+  color: green;
+ font-weight: 500;
+}
+
+button{
+  background-color: green;
+  cursor: pointer;
+  color: white;
+  border: 2px solid green;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius:70px;
+  font-size: 1.3vw;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+button:hover, button:active {
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+  border-radius:70px;
+  transition: all 0.3s ease-in ;
+  overflow-block: scroll;
+
+  }
+
+
+
+.toggleBtn{
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  width: 10%;
+  
+ 
+}
+
+.toggleBtn .bar{
+height: 4px;
+width: 4vw;
+background-color: green;
+justify-content: space-between;
+position: relative;
+margin: 3px 0;
+border-radius: 10px;
+
+}
+/*   EXPANDABLE MENU IN HEADER   */
+
+
+
+/*  Normal screens*/
+/* set dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 0 11px;
+  overflow: visible;
+  line-height: normal;
+ 
+}
+
+
+
+.dropbtn{
+  display: block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition:all 0.3s ease-in-out;
+  
+ 
+ 
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    font-size: 1.2vw;
+    overflow: visible;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+   .dropdown-content a:hover {background-color: rgb(224, 238, 221);}
+  
+   /* Show the dropdown menu on hover */
+   .dropdown:hover .dropdown-content { align-items: center;display: inline-block;}
+   
+   /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn:hover {text-decoration:green;}
+
+
+
+    /* ------ CONTENT --------------*/ 
+
+    h2{
+      font-family: Poppins;
+      color: rgb(90, 90, 90);
+    font-size:  2vw;
+    font-weight: bolder;
+  }
+  
+  h3{
+    font-family: Poppins;
+    color: rgb(90, 90, 90);
+  font-size:  1.8vw;
+  font-weight: bolder;
+  }
+
+
+    .btnInPage{
+      background-color: green;
+      color: white;
+      border: 2px solid green;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-bottom-right-radius:80px;
+      font-size: 2vw;
+      font-family: Poppins;
+      width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  a.btnInPage{
+    color: white;
+  }
+
+.kontent{
+  top:56px;
+  margin-top: 15%;
+  margin-left: 8%;
+  margin-right:8% ;
+  overflow: visible;
+  }
+
+    
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 46%;
+  grid-column-gap: 15%;
+  padding: 10px;
+  overflow:hidden;
+  position: relative;
+  top:100px;
+}
+
+.grid-container > div {
+  background-color: rgba(203 203, 203, 0.788);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 1.5vw;
+  position: relative;
+}
+
+
+.rubrik{
+  padding: 0;
+  margin-bottom: -10;
+
+}
+  
+.empty{
+    padding: 0;
+   margin-top: -10;
+}
+
+
+
+
+/* ----- footer----- */
+/* footer{
+  display: none;
+} */
+
+/* ----- IMAGES------ */
+
+/* Image container*/
+.fotoram{
+  border-radius:50px;
+  width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .mySlides{
+ display: none;
+	border-radius:50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+ }
+
+img {vertical-align: middle;
+  display: flex;
+  flex-grow: right;
+  text-align:right;
+ 
+}
+
+/* Next & previous buttons */
+.prev, .next{
+cursor: pointer;
+position: absolute;
+top: 50%;
+padding: 16px;
+margin-top: -22px;
+background-color: rgba(0, 128, 0, 0.37);
+color: white;
+font-weight: bold;
+font-size: 1.5vw;
+transition: 0.6s ease-in;
+border-radius: 0 3px 3px 0;
+user-select: none;
+border: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(255, 255, 255, 0.301);
+color: green;
+border: none;
+
+}
+/* Position the "next button" to the right */
+.next{
+right: 0;
+border-radius: 3px 0 0 3px
+}
+
+.prev{
+left: 0;
+}
+
+.check{
+  position: relative;
+}
+/* small screens */
+@media screen and (max-width:700px) {
+  /*block instead of inline when small screen */
+  #listan li{ 
+    /* display: none; */
+    align-items: left;
+    position: relative;  
+    padding: 0 10px;
+    width: 100%;
+    flex-direction: row;
+    display:inline-block;
+    min-height: none;
+   }
+
+.inactive{ /* working */
+  display:none;
+}
+
+
+
+#listan{
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 20px;
+  position: absolute;
+  justify-content: space-between  ;
+  top: 50px;
+  background-color: white;
+   z-index: -1;
+}
+
+
+
+header{
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+
+ .toggleBtn{
+   display: flex;
+   text-align: center;
+   width: 15%;
+   float: right;
+   margin-right: 0 ;
+   position: absolute;
+   right: 5px;
+   top:46px;
+   
+  
+ }
+
+ button{
+  background-color: green;
+  top: 10px;
+  position: absolute;
+  right: 10px;
+  
+}
+
+/* set dropdown menu */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  overflow: visible;
+  flex-direction: column;
+  width: 100%;
+  }
+
+.dropbtn{
+  flex-direction: column;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+
+}
+
+
+
+nav{
+  width: 70%;
+ }
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  justify-content: space-between;
+  position: fixed;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition:all 0.3s ease-in-out;
+  width:  100%;
+  align-items: center;
+  font-size: 2vw;
+  background-color: white;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    font-size: 1.5vw;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+  }
+
+  
+    
+
+
+  /* Change color of dropdown links on hover */
+   .dropdown-content a:hover {background-color: rgb(224, 238, 221);}
+  
+   /* Show the dropdown menu on hover */
+   .dropdown:hover .dropdown-content {
+     display: flex; 
+     flex-direction: row;
+     justify-content: center;
+    position: relative;  
+    background-color:rgba(0, 128, 0, 0.301);
+    right: 10px;
+    
+     }
+   
+   /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn:hover {
+      color: #3e8e41; 
+      text-decoration:green;
+      background-color: white;
+    }
+
+
+
+/* Grid 1:1 in small screens */ 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 90%;
+  padding: 10px;
+  position: relative;
+
+}
+
+.rubrik{
+padding: 10;
+}
+
+.empty{
+  padding: 0;
+  margin-top: -10;
+  
+
+}
+
+.grid-content{
+  padding: 0;
+  /* margin-bottom: -10;
+    */
+}
+
+
+/* MENU IN FOOTER */
+
+
+footer{
+  display: flex;
+  justify-content: first baseline;
+  padding: 05% 20%;
+  background-color: green;
+  color: white;
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.foot_links li{ 
+  display: inline;
+  font-size: 1.3 vw;
+  align-items:flex-start;
+  position: relative;  
+  margin:0 ;
+  height: fit-content;    
+  padding: 10px;
+  color: white;
+}
+
+/* set dropdown menu */
+.footer_dropdown {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  line-height: normal; 
+
+}
+
+.footer_dropbtn{
+  display: inline;
+  align-items: center;
+  color: white;
+}
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.footer_dropdown-content {
+  display: block;
+  position: relative;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition:all 0.3s ease-in-out;
+  margin-bottom: 0;
+   }
+  /* Links inside the dropdown */
+  .footer_dropdown-content a {
+    color: white;
+    font-size: 1.2vw;
+    overflow: visible;
+    display: block;
+    position: relative;
+  
+  }
+
+
+}
+ /* ------------------  TEXT STYLING --------------------- */ 
+/* get a word from header and make it black */
+.fokusHeader{
+	color: black;
+	font-weight: bold;
+}
+
