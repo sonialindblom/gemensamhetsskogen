@@ -166,7 +166,7 @@ button{background-color: green;
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
   }
 
