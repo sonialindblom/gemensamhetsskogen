@@ -3,12 +3,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 
+body {margin:0;font-family:Arial;
+  color:#656565;}
+  *{
+    text-decoration: none;
+  }
+
 .topnav {
-  overflow: hidden;
+  overflow: visible;
   background-color:white;
   display: flex;
   justify-content: flex-end;
-  
+  text-decoration: none;
+  position: absolute;
+  right: 0;
 }
 
 .topnav a {
@@ -19,6 +27,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+ 
 }
 
 .active {
@@ -66,8 +75,8 @@
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+  background-color:rgba(0, 128, 0, 0.082);
+  color: green;
 }
 
 .dropdown-content a:hover {
@@ -86,7 +95,6 @@
   margin-right: auto;
   z-index: -2;
   width: 50%;
-  text-decoration: none;
 }
 a:visited{
   color:#656565;
@@ -104,13 +112,12 @@ a:visited{
   font-weight: 500;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
-  top:5px;
+  top:70px;
   right:0;
-  z-index: -1;
+ 
 }
-.till a{
+a.till{
   color:white;
-  text-decoration: none;
 }
 
 .till a:visited{
@@ -136,10 +143,21 @@ button{background-color: green;
     float: right;
     display: block;
     color: green;
-    
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+  }
+
+  h1{
+    font-size: 30px;
   }
 }
 
+.icon{
+  position: absolute;
+    right: 0;
+    top: 0;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -148,6 +166,10 @@ button{background-color: green;
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  .fa-caret-down{
+    display: none;
   }
   .topnav.responsive a {
     float: none;

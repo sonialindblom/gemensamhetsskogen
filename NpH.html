@@ -11,12 +11,13 @@ color:#656565;}
 }
 
 .topnav {
-  overflow: hidden;
+  overflow: visible;
   background-color:white;
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
-  
+  position: absolute;
+  right: 0;
 }
 
 .topnav a {
@@ -27,6 +28,7 @@ color:#656565;}
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+ 
 }
 
 .active {
@@ -74,7 +76,7 @@ color:#656565;}
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color:rgba(0, 128, 0, 0.164);
+  background-color:rgba(0, 128, 0, 0.082);
   color: green;
 }
 
@@ -111,9 +113,9 @@ a:visited{
   font-weight: 500;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
-  top:5px;
+  top:70px;
   right:0;
-  z-index: -1;
+ 
 }
 a.till{
   color:white;
@@ -142,10 +144,21 @@ button{background-color: green;
     float: right;
     display: block;
     color: green;
-     
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+  }
+
+  h1{
+    font-size: 30px;
   }
 }
 
+.icon{
+  position: absolute;
+    right: 0;
+    top: 0;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -154,6 +167,10 @@ button{background-color: green;
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  .fa-caret-down{
+    display: none;
   }
   .topnav.responsive a {
     float: none;
@@ -220,7 +237,7 @@ button{background-color: green;
       <a href="#">På sociala media</a>
     </div>
   </div> 
-  <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 </header>
 

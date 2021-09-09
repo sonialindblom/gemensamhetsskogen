@@ -18,6 +18,7 @@ class Myheader extends HTMLElement{
               <i class="fa fa-caret-down"></i>
             </span>
             <div class="dropdown-content">
+              <a href="initiativ.html">Initiativet</a>
               <a href="aktuellt.html"  >aktuellt </a>
               <a href="iMedia.html"  >i media</a>
               <a href="">nästa steg</a>
