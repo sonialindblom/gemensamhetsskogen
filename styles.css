@@ -146,6 +146,8 @@ button{background-color: green;
     font-weight: 400;
     position: absolute;
     top: 0;
+    right: 0;
+    margin-right: -2;
   }
 
   h1{

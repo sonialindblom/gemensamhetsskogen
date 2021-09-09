@@ -65,7 +65,7 @@ customElements.define('my-header',Myheader)
 class myHead extends HTMLElement{
   connectedCallback(){
       this.innerHTML =` 
-      <head>
+     
       <head>
               
     
