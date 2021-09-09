@@ -4,63 +4,48 @@ class Myheader extends HTMLElement{
     connectedCallback(){
         this.innerHTML =` 
         <header>
-        <div class="logo"> 
-  
-        <div class="toggleBtn" onclick="openNav()" >
-            <div class="bar"></div>
-            
-            <div class="bar"></div>
-            
-            <div class="bar"></div>
+        <div class="logo"><h1><a href="index.html" class=" logo">Gemensamhetsskog <br> Billingen</a></h1></div>
+        <div class="till"><a   href="https://bit.ly/Billingen"> till namninsamling</a></div>
+          <div class="topnav" id="myTopnav">
           
-        </div> 
-           <h1><a href="index.html" class="logo">
-            Gemensamhetsskog <br> Billingen</a></h1>
-              
-          </div > 
-          <div id="myDIV">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <ul  id="listan" class="nav_links">
-                          <li>        
-                            <div class="dropdown" >
-                                  <a class="dropbtn" href="projektet.html" >Om Projektet</a>
-                                  <div class="dropdown-content">
-                                    <a href="aktuellt.html"  >aktuellt</a>
-                                    <a href="iMedia.html"  >i media</a>
-                                    <a href="">nästa steg</a>
-                                    <a href="QA.html"  >Frågor & svar</a>
-                                  </div>
-                                </div>
-                          
-                          </li>
-                          
-                          <li> <div id="dropdown"  class="dropdown" >
-                              <a class="dropbtn" href="Fakta.html "  >Fakta</a>
-                             <div class="dropdown-content">
-                                <a href="FaktaStyrdokument.html">Styrdokument</a>
-                                <a href="FaktaLknProjekt.html"> linkande projekt</a>
-                                <a href="#">plantageskog</a>
-                                <a href="kontinuitetsskog.html">kontinuitetsskog</a>
-                              </div>
-                            </div></li>
-                          <li> <div class="dropdown">
-                               <a href="OmOss.html" class="dropbtn" > Om Oss</a>
-                              <div class="dropdown-content">
-                                <a href="OmOss.html" target="iframe2">Vem är vi</a>
-                                <a href="#">På sociala media</a>
-                              </div>
-                            </div></li>
-                          <li>  
-                        <div class="dropdown">
-                          
-                        <a href="index.html"  class="dropbtn" >Hem</a>
-                        </div> </li> 
-            </ul>
-          </div>
-      
-                              
-         <a  class="cta" href="https://bit.ly/Billingen"> <button> till namninsamling</button></a>
-       
+          <div class="dropdown">
+            <span class="dropbtn"> 
+              <i class="fa fa-home"></i>
+            </span>
+          </div> 
+          <div class="dropdown">
+            <span class="dropbtn">Om Initiativet 
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <div class="dropdown-content">
+              <a href="aktuellt.html"  >aktuellt </a>
+              <a href="iMedia.html"  >i media</a>
+              <a href="">nästa steg</a>
+              <a href="QA.html"  >Frågor & svar</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <span class="dropbtn">Fakta 
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <div class="dropdown-content">
+              <a href="FaktaStyrdokument.html">Styrdokument</a>
+              <a href="FaktaLknProjekt.html"> linkande projekt</a>
+              <a href="#">plantageskog</a>
+              <a href="kontinuitetsskog.html">kontinuitetsskog</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <span class="dropbtn">Om Oss 
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <div class="dropdown-content">
+              <a href="OmOss.html">Vem är vi</a>
+              <a href="#fb-page">På sociala media</a>
+            </div>
+          </div> 
+          <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
         </header>
   `
        
@@ -76,48 +61,40 @@ customElements.define('my-header',Myheader)
 /* GET A FOOTER*/
 
 
-class Myfooter extends HTMLElement{
+class myHead extends HTMLElement{
   connectedCallback(){
       this.innerHTML =` 
-      <footer>
-            
-     <nav>
-       <ul id=huvudMeny class="foot_links ">
-                      <li>        
-                        <div id="footer_dropdown"  class="footer_dropdown" >
-                              <a class="footer_dropbtn" href="projektet.html" >Om Projektet</a>
-                              <div class="footer_dropdown-content">
-                                <a href="aktuellt.html"  >aktuellt</a>
-                                <a href="iMedia.html"  >i media</a>
-                                <a href="">nästa steg</a>
-                                <a href="QA.html"  >Frågor & svar</a>
-                              </div>
-                            </div>
-                      
-                      </li>
-
-                      
-                      <li> <div id="footer_dropdown"  class="dropdown" >
-                          <a class="footer_dropbtn" href="Fakta.html "  ><br> Fakta</a>
-                         <div class="footer_dropdown-content">
-                            <a href="FaktaStyrdokument.html">Styrdokument</a>
-                            <a href="FaktaLknProjekt.html" target=""> linkande projekt</a>
-                            <a href="">plantageskog</a>
-                            <a href="kontinuitetsskog.html">kontinuitetsskog</a>
-                          </div>
-                        </div></li>
-                      <li> <div class="footer_dropdown">
-                          <span class="footer_dropbtn"><br> <a href="OmOss.html" onclick="fq4()"></a> Om Oss</span>
-                          <div class="footer_dropdown-content">
-                            <a href="OmOss.html" target="iframe2">Vem är vi</a>
-                            <a href="#">På sociala media</a>
-                          </div>
-                        </div></li>
-      <!--  <li>  <a href="index.html">Home</a> </li>  */ -->  </ul>
-     </nav>
-                          
-      
-    </footer>
+      <head>
+      <head>
+              
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- makes content available in several devices.-->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <title>Gemensamhetsskog</title>
+      <meta name="Gemensamhetsskog Billingen" content="Frivillig organisation">
+      <meta name="Webmaster" content="Sonia Lindblom">
+      <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+      <link rel="stylesheet" href="styles.css">
+          
+      <script src="script.js"></script>
+    
+      <style>
+    
+        .responsive-iframe {
+          position: relative;
+          top: 100;
+          left: 0;
+          right: 0;
+          overflow: visible;
+        }
+        </style>
+                
+    </head>
 `
      
   }
@@ -125,7 +102,7 @@ class Myfooter extends HTMLElement{
 }
 
 
-customElements.define('my-footer',Myfooter)
+customElements.define('my-head',myHead)
 
 /* GET A SLIDESHOW */
 
@@ -199,6 +176,10 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+
+
+/* FACEBOOK */
 
 
 

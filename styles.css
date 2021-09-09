@@ -2,6 +2,204 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+
+.topnav {
+  overflow: hidden;
+  background-color:white;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:656565;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  margin: 0;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: #656565;
+  padding: 0px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo{
+   cursor: pointer;
+  font-weight: 800;
+  font-family: Poppins;
+  margin-right: auto;
+  z-index: -2;
+  width: 50%;
+  text-decoration: none;
+}
+a:visited{
+  color:#656565;
+}
+
+.till{
+  background-color: green;
+  cursor: pointer;
+  color: white;
+  border: 2px solid green;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius:70px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  top:5px;
+  right:0;
+  z-index: -1;
+}
+.till a{
+  color:white;
+  text-decoration: none;
+}
+
+.till a:visited{
+  color:white;
+}
+
+button{background-color: green;
+  cursor: pointer;
+  color: white;
+  border: 2px solid green;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius:70px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: green;
+    
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+
+}
+
+.fa-home{font-size: 17px;
+        color: #656565;
+         margin-bottom: 5px;
+        padding:0}
+
+/* ++++++++
++++++++++++ DONT TOUCH UP FROM HERE +++++++++*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*override everything */
 * {
   box-sizing: border-box;
@@ -18,69 +216,7 @@ body{
 }
 
 
-
-/*format font in header*/
-header li, a, button{
-  font-weight: 300;
-  color: 656565;
-  text-decoration: none;
- 
-  
-}
-/* adjust menu to right and logo to left */
-header{
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 10px;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  z-index: 1;
-  top:0px;
-}
-
-
-/* get logoText to left */
-.logo{
-  cursor: pointer;
-  font-weight: 800;
-  font-family: Poppins;
-  margin-right: auto;
-  z-index: -2;
-  width: 50%;
-}
-
-
-/* distribute navlinks in line */
-.nav_links li{ 
- display: inline-block;
- font-size: 1.5 vw;
- min-height: 3vh;
- margin-top:14px;;
-}
-.nav_links li:nth-child(4){
-  padding-right: 1rem;
- }
-
-
-
-
-/*transition to navlinks*/
-.nav_links a {
-    transition: all 0.3s ease 0s;
-}
-
-a:visited {
-  color: #656565;
-  text-decoration: none;
-}
-
-.nav_links a:hover {
-  transition: all 0.3s ease 0s;
-  color: green;
- font-weight: 500;
-}
-
+/* 
 button{
   background-color: green;
   cursor: pointer;
@@ -93,91 +229,21 @@ button{
   font-weight: 500;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+ */
 
-.closebtn{
-  display: none;
-}
-
-button:hover, button:active {
+button:hover, button:active, .till:hover, .till:active  {
   background-color: white;
   color: green;
   border: 2px solid green;
   border-radius:70px;
   transition: all 0.3s ease-in ;
   overflow-block: scroll;
-
   }
 
 
 
-.toggleBtn{
-  display: none;
-  width: 10%;
-  z-index: -1;
- }
-
- 
-
-.toggleBtn .bar{
-height: 4px;
-width: 4vw;
-background-color: green;
-justify-content: space-between;
-position: relative;
-margin: 1.5px 0;
-border-radius: 10px;
-
-}
-/*   EXPANDABLE MENU IN HEADER   */
-
-
-
-/*  Normal screens*/
-/* set dropdown menu */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  padding: 0 11px;
-  overflow: visible;
-  line-height: normal;
- 
-}
-
-
-
-.dropdown-btn{
-  display: block;
-}
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: fixed;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  transition:all 0.3s ease-in-out;
-  
  
  
-  }
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 10px 10px;
-    font-size: 1.2vw;
-    overflow: visible;
-    display: block;
-  }
-
-  /* Change color of dropdown links on hover */
-   .dropdown-content a:hover {background-color: rgb(224, 238, 221);}
-  
-   /* Show the dropdown menu on hover */
-   .dropdown:hover .dropdown-container { align-items: center;display: inline-block;}
-   
-   /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn:hover {text-decoration:green;}
-
-
-
     /* ------ CONTENT --------------*/ 
 
    h2, h3{
@@ -190,6 +256,7 @@ border-radius: 10px;
 
     .btnInPage{
       background-color: green;
+      margin-top: 20;
       color: white;
       border: 2px solid green;
       padding: 10px 20px;
@@ -200,7 +267,7 @@ border-radius: 10px;
       font-size: 2vw;
       font-family: Poppins;
       width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   a.btnInPage{
@@ -310,32 +377,7 @@ border-radius: 3px 0 0 3px
 left: 0;
 }
 
-.check{
-  position: relative;
-}
-/* small screens */
-@media screen and (max-width:700px) {
 
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;}
-
-  /*block instead of inline when small screen */
-  #listan li{ 
-    padding: 0 10px;
-    flex-direction: column;
-    display: grid;
-    position:static;
-    }
-
-  .inactive{ /* working */
-   display:none;
-  }
-
-h1{
-  font-size: 3vw;
-}
 
 .logo{
   width: 60%;
@@ -425,81 +467,9 @@ header{
 }
 
 
-/* 
-*-- set dropdown menu --*
-.dropdown {
-  position: absolute;
-  display: block;
-  overflow: visible;
-  flex-direction: column;
-  justify-content: right;
-  }
-*/
-.dropdown-btn{
-  flex-direction: column;
-  justify-content: right;
-  display: block;
-  color: 656565;
+
+@media screen and (max-width: 600px) {
   
-
-} 
-
-
-
-nav{
-  width: 70%;
- }
-
-
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display:none;
-/*   justify-content: right;
-  position: fixed;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  transition:all 0.3s ease-in-out;
-  align-items: right;
-  font-size: 2vw;
-  position: relative; 
-  padding-left: 150px; */
-  } 
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    overflow: visible;
-    display: block;
-    position: relative;
- 
-  }
-
-  
-    
-
-
-  /* Change color of dropdown links on hover */
-   .dropdown-content a:hover {background-color: rgb(224, 238, 221);}
-  
-   /* Show the dropdown menu on hover */
-   .dropdown:hover .dropdown-content {
-     display: flex; 
-     flex-direction: column;
-     justify-content: right;
-    position: absolute;  
-    right: 10px;
-    background-color: rgb(224, 238, 221);
-    padding-left: 150px;
-    
-    
-     }
-   
-   /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn:hover {
-      text-decoration:green;
-     
-    }
-
-
 
 /* Grid 1:1 in small screens */ 
 
@@ -511,6 +481,9 @@ nav{
 
 }
 
+.till{
+  top: 70px;
+}
 .rubrik{
 padding: 10;
 }
@@ -533,66 +506,6 @@ padding: 10;
   float: right;
   padding-right: 8px;
 }
-
-/* MENU IN FOOTER */
-
-
-footer{
-  display: flex;
-  justify-content: first baseline;
-  padding: 05% 20%;
-  background-color: green;
-  color: white;
-  width: 100%;
-  margin-bottom: 0%;
-}
-
-.foot_links li{ 
-  display: inline;
-  font-size: 1.3 vw;
-  align-items:flex-start;
-  position: relative;  
-  margin:0 ;
-  height: fit-content;    
-  padding: 10px;
-  color: white;
-}
-
-/* set dropdown menu */
-.footer_dropdown {
-  position: relative;
-  display: inline-block;
-  overflow: visible;
-  line-height: normal; 
-
-}
-
-.footer_dropbtn{
-  display: inline;
-  align-items: center;
-  color: white;
-}
-
-
-
-/* Dropdown Content (Hidden by Default) */
-.footer_dropdown-content {
-  display: block;
-  position: relative;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  transition:all 0.3s ease-in-out;
-  margin-bottom: 0;
-   }
-  /* Links inside the dropdown */
-  .footer_dropdown-content a {
-    color: white;
-    font-size: 1.2vw;
-    overflow: visible;
-    display: block;
-    position: relative;
-  
-  }
-
 
 }
  /* ------------------  TEXT STYLING --------------------- */ 
