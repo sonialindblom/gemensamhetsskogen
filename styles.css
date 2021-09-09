@@ -11,7 +11,15 @@ body {margin:0;font-family:Arial;
 
 header{
    background-color: white;
+   z-index: 1;
+   position: sticky;
+   top: 0;
+   height: 80px;
+   overflow: visible;
 }
+.kontent{
+  top:120px;
+  }
 .topnav {
   overflow: visible;
   background-color:white;
@@ -20,6 +28,7 @@ header{
   text-decoration: none;
   position: fixed;
   right: 0;
+  top: 80;
 }
 
 .topnav a {
@@ -103,6 +112,20 @@ header{
   background-color: white;
   z-index: -2;
 }
+
+.logoSm{
+  cursor: pointer;
+  display: none;
+ font-weight: 800;
+ font-family: Poppins;
+ margin-right: auto;
+ z-index: -2;
+ width: 50%;
+ position: fixed;
+ top: 5px;
+ background-color: white;
+ z-index: -2;
+}
 a:visited{
   color:#656565;
 }
@@ -119,7 +142,7 @@ a:visited{
   font-weight: 400;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: fixed;
-  top:0;
+  top:45;
   right:0;
  
 }
@@ -157,9 +180,8 @@ button{background-color: green;
     right: 0;
     margin-right: -2;
   }
-
   h1{
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -305,14 +327,6 @@ button:hover, button:active, .till:hover, .till:active  {
 
   a.btnInPage{
     color: white;
-  }
-
-.kontent{
-  top:80px;
-  margin-top: 15%;
-  margin-left: 8%;
-  margin-right:8% ;
-  overflow: visible;
   }
 
     
