@@ -15,7 +15,7 @@ body {margin:0;font-family:Arial;
   display: flex;
   justify-content: flex-end;
   text-decoration: none;
-  position: absolute;
+  position: fixed;
   right: 0;
 }
 
@@ -168,6 +168,7 @@ button{background-color: green;
     position: absolute;
     left: 0;
     top: 0;
+    width: 60px;
   }
 
   .fa-caret-down{

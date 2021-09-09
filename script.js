@@ -9,9 +9,9 @@ class Myheader extends HTMLElement{
           <div class="topnav" id="myTopnav">
           
           <div class="dropdown">
-            <span class="dropbtn"> 
-              <i class="fa fa-home"></i>
-            </span>
+          <a class="dropbtn" href="index.html"> 
+          <i class="fa fa-home"></i>
+        </a>
           </div> 
           <div class="dropdown">
             <span class="dropbtn">Om Initiativet 
