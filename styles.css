@@ -193,7 +193,7 @@ button{background-color: green;
 
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: fixed;}
+  .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     left: 0;
