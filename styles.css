@@ -9,6 +9,9 @@ body {margin:0;font-family:Arial;
     text-decoration: none;
   }
 
+header{
+   background-color: white;
+}
 .topnav {
   overflow: visible;
   background-color:white;
@@ -95,6 +98,10 @@ body {margin:0;font-family:Arial;
   margin-right: auto;
   z-index: -2;
   width: 50%;
+  position: fixed;
+  top: 5px;
+  background-color: white;
+  z-index: -2;
 }
 a:visited{
   color:#656565;
@@ -108,11 +115,11 @@ a:visited{
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
-  border-radius:70px;
-  font-weight: 500;
+  border-radius:60px;
+  font-weight: 400;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position: absolute;
-  top:70px;
+  position: fixed;
+  top:0;
   right:0;
  
 }
@@ -123,6 +130,7 @@ a.till{
 .till a:visited{
   color:white;
 }
+.till a:hover{color: green;}
 
 button{background-color: green;
   cursor: pointer;
@@ -163,11 +171,11 @@ button{background-color: green;
 
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 30;
     width: 60px;
   }
 
@@ -506,9 +514,7 @@ header{
 
 }
 
-.till{
-  top: 70px;
-}
+
 .rubrik{
 padding: 10;
 }
