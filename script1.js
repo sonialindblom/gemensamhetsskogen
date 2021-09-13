@@ -95,41 +95,11 @@ connectedCallback(){
     this.innerHTML =` 
     <footer>
           
-   <nav>
-     <ul id=huvudMeny class="foot_links ">
-                    <li>        
-                      <div id="footer_dropdown"  class="footer_dropdown" >
-                            <a class="footer_dropbtn" href="projektet.html" >Om Projektet</a>
-                            <div class="footer_dropdown-content">
-                              <a href="aktuellt.html"  >aktuellt</a>
-                              <a href="iMedia.html"  >i media</a>
-                              <a href="">nästa steg</a>
-                              <a href="QA.html"  >Frågor & svar</a>
-                            </div>
-                          </div>
-                    
-                    </li>
-
-                    
-                    <li> <div id="footer_dropdown"  class="dropdown" >
-                        <a class="footer_dropbtn" href="Fakta.html "  ><br> Fakta</a>
-                       <div class="footer_dropdown-content">
-                          <a href="FaktaStyrdokument.html">Styrdokument</a>
-                          <a href="FaktaLknProjekt.html" target=""> linkande projekt</a>
-                          <a href="">plantageskog</a>
-                          <a href="kontinuitetsskog.html">kontinuitetsskog</a>
-                        </div>
-                      </div></li>
-                    <li> <div class="footer_dropdown">
-                        <span class="footer_dropbtn"><br> <a href="OmOss.html" onclick="fq4()"></a> Om Oss</span>
-                        <div class="footer_dropdown-content">
-                          <a href="OmOss.html" target="iframe2">Vem är vi</a>
-                          <a href="#">På sociala media</a>
-                        </div>
-                      </div></li>
-    <!--  <li>  <a href="index.html">Home</a> </li>  */ -->  </ul>
-   </nav>
-                        
+    <div class="footer">
+    <p> &#169; gemensamhetsskogen.se</p>
+    <p> gemensamhetsskogen@gmail.com</p>
+  
+   </div>
     
   </footer>
 `

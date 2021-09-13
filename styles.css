@@ -184,6 +184,9 @@ button{background-color: green;
     font-size: 25px;
   }
 }
+#fakta{content:'<br>Frakta';
+    padding:20px;
+  }
 
 .icon{
   position: absolute;
@@ -228,8 +231,17 @@ button{background-color: green;
 /* ++++++++
 +++++++++++ DONT TOUCH UP FROM HERE +++++++++*/
 
-
-
+p{
+  padding: 10px;
+}
+.footer{
+  text-align: center;
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: inherit;
+}
 
 
 

@@ -21,18 +21,17 @@ class Myheader extends HTMLElement{
               <a href="initiativ.html">Initiativet</a>
               <a href="aktuellt.html"  >aktuellt </a>
               <a href="iMedia.html"  >i media</a>
-              <a href="">nästa steg</a>
               <a href="QA.html"  >Frågor & svar</a>
             </div>
           </div> 
           <div class="dropdown">
-            <span class="dropbtn">Fakta 
+            <span class="dropbtn" id="fakta">Fakta 
               <i class="fa fa-caret-down"></i>
             </span>
             <div class="dropdown-content">
               <a href="FaktaStyrdokument.html">Styrdokument</a>
               <a href="FaktaLknProjekt.html"> linkande projekt</a>
-              <a href="#">plantageskog</a>
+              <a href="granplantage.html">Granplantage</a>
               <a href="kontinuitetsskog.html">kontinuitetsskog</a>
             </div>
           </div> 
@@ -62,48 +61,30 @@ customElements.define('my-header',Myheader)
 /* GET A FOOTER*/
 
 
-class myHead extends HTMLElement{
+
+class Myfooter extends HTMLElement{
   connectedCallback(){
       this.innerHTML =` 
-     
-      <head>
-              
+      <footer>
+            
+      <div class="footer">
+      <p> &#169; gemensamhetsskogen.se <br>
+       gemensamhetsskogen@gmail.com</p>
     
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- makes content available in several devices.-->
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <title>Gemensamhetsskog</title>
-      <meta name="Gemensamhetsskog Billingen" content="Frivillig organisation">
-      <meta name="Webmaster" content="Sonia Lindblom">
-      <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    
-      <link rel="stylesheet" href="styles.css">
-          
-      <script src="script.js"></script>
-    
-      <style>
-    
-        .responsive-iframe {
-          position: relative;
-          top: 100;
-          left: 0;
-          right: 0;
-          overflow: visible;
-        }
-        </style>
-                
-    </head>
-`
+     </div>
+      
+    </footer>
+  `
      
   }
+  
+  }
+  
+  
+  customElements.define('my-footer',Myfooter)
 
-}
 
 
-customElements.define('my-head',myHead)
 
 /* GET A SLIDESHOW */
 
@@ -111,8 +92,15 @@ customElements.define('my-head',myHead)
 var slideIndex = 1;
 showDivs(slideIndex);
 
+
+
 function plusDivs(n) {
   showDivs(slideIndex += n);
+}
+
+
+function currentDivs(n) {
+  showDivs(slideIndex = n);
 }
 
 function showDivs(n) {

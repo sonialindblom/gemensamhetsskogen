@@ -7,76 +7,54 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
   </head>
   <body>
   
     <header>
-
-      <button onclick="dropdown()"> Hi</button>
-
-      <div class="logo"> 
-
+      <div class="logo"><h1><a href="index.html" class=" logo">Gemensamhetsskog <br> Billingen</a></h1></div>
+      <div class="till"><a   href="https://bit.ly/Billingen"> till namninsamling</a></div>
+        <div class="topnav" id="myTopnav">
         
-        <div class="toggleBtn" onclick="openNav()" >
-          <div class="bar"></div>
-          
-          <div class="bar"></div>
-          
-          <div class="bar"></div>
-        
-        </div>
-      
-        <a href="index.html" class="logo">
-         <h1> Gemensamhetsskog <br> Billingen</a></h1>
-            
-        </div > 
-        <div id="myDIV">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          
-        <ul  id="listan" class="sidenav nav_links">
-                        <li>        
-                          <div class="dropdown" >
-                                <span class="dropdown-btn">Om Initiativet  <i class="fa fa-caret-down"></i></span>
-                                <div class="dropdown-container">
-                                  <a href="aktuellt.html"  >aktuellt </a>
-                                  <a href="iMedia.html"  >i media</a>
-                                  <a href="">nästa steg</a>
-                                  <a href="QA.html"  >Frågor & svar</a>
-                                </div>
-                              </div>
-                        
-                        </li>
-                        
-                        <li> <div id="dropdown"  class="dropdown" >
-                          <span class="dropdown-btn">Fakta  <i class="fa fa-caret-down"></i></span>
-                           <div class="dropdown-container">
-                              <a href="FaktaStyrdokument.html">Styrdokument</a>
-                              <a href="FaktaLknProjekt.html"> linkande projekt</a>
-                              <a href="#">plantageskog</a>
-                              <a href="kontinuitetsskog.html">kontinuitetsskog</a>
-                            </div>
-                          </div></li>
-                        <li> <div class="dropdown">
-                          <span class="dropdown-btn">Om Oss  <i class="fa fa-caret-down"></i></span>
-                            <div class="dropdown-container">
-                              <a href="OmOss.html">Vem är vi</a>
-                              <a href="#">På sociala media</a>
-                            </div>
-                          </div></li>
-                        <li>  
-                          <span class="dropdown-btn" href="index.html">Hem   </span> 
-                        </li> 
-          </ul>
-        </div>
-    
-                            
-       <a  class="cta" href="https://bit.ly/Billingen"> <button> till namninsamling</button></a>
-
-
-
-     
+        <div class="dropdown">
+        <a class="dropbtn" href="index.html"> 
+        <i class="fa fa-home"></i>
+      </a>
+        </div> 
+        <div class="dropdown">
+          <span class="dropbtn">Om Initiativet 
+            <i class="fa fa-caret-down"></i>
+          </span>
+          <div class="dropdown-content">
+            <a href="initiativ.html">Initiativet</a>
+            <a href="aktuellt.html"  >aktuellt </a>
+            <a href="iMedia.html"  >i media</a>
+            <a href="QA.html"  >Frågor & svar</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <span class="dropbtn">Fakta 
+            <i class="fa fa-caret-down"></i>
+          </span>
+          <div class="dropdown-content">
+            <a href="FaktaStyrdokument.html">Styrdokument</a>
+            <a href="FaktaLknProjekt.html"> linkande projekt</a>
+            <a href="granplantage.html">Granplantage</a>
+            <a href="kontinuitetsskog.html">kontinuitetsskog</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <span class="dropbtn">Om Oss 
+            <i class="fa fa-caret-down"></i>
+          </span>
+          <div class="dropdown-content">
+            <a href="OmOss.html">Vem är vi</a>
+            <a href="#fb-page">På sociala media</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
       </header>
   
 
