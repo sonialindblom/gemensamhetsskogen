@@ -227,6 +227,20 @@ button{background-color: green;
   }
 
 
+  .footer{
+    text-align: center;
+    background-color: whitesmoke;
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0;
+    width: 100%;
+    height: inherit;
+   font-size:14px ;
+  }
+  .footerp{
+    text-align: center;
+  }
+
 }
 
 .fa-home{font-size: 17px;
