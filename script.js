@@ -65,15 +65,17 @@ customElements.define('my-header',Myheader)
 class Myfooter extends HTMLElement{
   connectedCallback(){
       this.innerHTML =` 
-      <footer>
-            
-      <div class="footer">
-      <p> &#169; gemensamhetsskogen.se <br>
-       gemensamhetsskogen@gmail.com</p>
-    
-     </div>
       
-    </footer>
+      '
+      
+      </div>
+      <div class="grid-container">
+         <div class="footer">
+         <p class="footerp"> &#169; gemensamhetsskogen.se <br>
+          gemensamhetsskogen@gmail.com</p>
+         </div>
+       </div>
+         
   `
      
   }

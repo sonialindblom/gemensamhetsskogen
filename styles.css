@@ -195,6 +195,12 @@ button{background-color: green;
 }
 
 
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -238,11 +244,16 @@ p{
   text-align: center;
   background-color: whitesmoke;
   position: absolute;
+  margin-top: 10px;
   bottom: 0;
   width: 100%;
   height: inherit;
+   grid-column-start: 1;
+  grid-column-end: 3;
 }
-
+.footerp{
+  text-align: center;
+}
 
 
 
@@ -345,6 +356,7 @@ button:hover, button:active, .till:hover, .till:active  {
 .grid-container {
   display: grid;
   grid-template-columns: 40% 46%;
+  grid-template-areas: "rubrik rubrik div.""footer footer ." "...";
   grid-column-gap: 15%;
   padding: 10px;
   overflow:hidden;
@@ -357,13 +369,28 @@ button:hover, button:active, .till:hover, .till:active  {
   text-align: left;
   padding: 20px 0;
   position: relative;
+  
+
 }
 
+.gridLeft{
+ 
+   grid-column-start: 1;
 
+   grid-column-end: 2;
+}
+
+.gridRight{
+  grid-row-start: 2;
+   grid-column-start: 2;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
+}
 .rubrik{
   padding: 0;
   margin-bottom: -10;
-
+ 
 }
   
 .empty{
@@ -524,7 +551,12 @@ header{
   right: 10px;
   
 }
-
+@media screen and (min-width:1200px) {
+  .item3{
+    font-size: larger;
+  }
+  
+}
 
 
 @media screen and (max-width: 600px) {
