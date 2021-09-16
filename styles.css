@@ -40,6 +40,7 @@ header{
   right: 0;
   top: 90;
   position: fixed;
+  background-color:white;
 }
 /*  */
 .topnav a {
@@ -51,6 +52,7 @@ header{
   text-decoration: none;
   font-size: 17px;
   text-align: center;
+  background-color: white;
  
 }
 
@@ -182,6 +184,12 @@ button{background-color: green;
   font-weight: 500;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -191,8 +199,8 @@ button{background-color: green;
     display: block;
     color: green;
     font-weight: 400;
-    position: absolute;
-    top: 80;
+    position: sticky;
+    top: 30;
     right: 0;
     margin-right: -2;
     background-color: whitesmoke;
@@ -200,24 +208,13 @@ button{background-color: green;
   h1{
     font-size: 25px;
   }
-}
 
-
-
-
-
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: sticky;
     right: 0;
     width: 50px;
+    padding: 0;
     }
 
 
@@ -239,6 +236,10 @@ button{background-color: green;
   }
 
 
+.footer{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
 }
 
 .fa-home{font-size: 17px;
@@ -256,15 +257,16 @@ p{
   text-align: center;
   background-color: whitesmoke;
   position: absolute;
-  margin-top: 10px;
   bottom: 0;
   width: 100%;
-  height: inherit;
-   grid-column-start: 1;
+  height: auto;
+  grid-column-start: 1;
   grid-column-end: 3;
 }
 .footerp{
-  text-align: center;
+  text-align: left;
+  margin-top: 0;
+  font-size: 12px;
 }
 
 
@@ -413,10 +415,6 @@ button:hover, button:active, .till:hover, .till:active  {
 
 
 
-/* ----- footer----- */
-/* footer{
-  display: none;
-} */
 
 /* ----- IMAGES------ */
 
@@ -571,44 +569,7 @@ header{
 }
 
 
-@media screen and (max-width: 600px) {
-  
 
-/* Grid 1:1 in small screens */ 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 90%;
-  padding: 10px;
-  position: relative;
-
-}
-
-
-.rubrik{
-padding: 10;
-}
-
-.empty{
-  padding: 0;
-  margin-top: -10;
-  
-
-}
-
-.grid-content{
-  padding: 0;
-  /* margin-bottom: -10;
-    */
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-}
  /* ------------------  TEXT STYLING --------------------- */ 
 /* get a word from header and make it black */
 .fokusHeader{

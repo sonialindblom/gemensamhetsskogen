@@ -41,7 +41,7 @@ class Myheader extends HTMLElement{
             </span>
             <div class="dropdown-content">
               <a href="OmOss.html">Vem är vi</a>
-              <a href="#fb-page">På sociala media</a>
+              <a href="OmOss.html#fb-page">På sociala media</a>
             </div>
           </div> 
           <a href="javascript:void(0);" style="font-size:26px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -68,13 +68,21 @@ class Myfooter extends HTMLElement{
       
       '
       
+      <div class="grid-container " font-size="12px">
+      <div class="item1">
+        <p class="footerp"> &#169; <a href="index.html">gemensamhetsskogen.se</a> 
+          <br>
+         <a href="https://www.facebook.com/Gemensamhetsskogen-100424565724679" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a> </p>
+    
       </div>
-      <div class="grid-container">
-         <div class="footer">
-         <p class="footerp"> &#169; gemensamhetsskogen.se <br>
-          gemensamhetsskogen@gmail.com</p>
-         </div>
-       </div>
+      <div class="item2"> 
+        <p class="footerp">
+        <b>Kontakt:</b> <br><a href="mailto:gemensamhetsskogen@gmail.com">gemensamhetsskogen@gmail.com</a>
+      <br>
+            <b>Sidansvarig:</b> <br> Sonia Lindblom - <a href="mailto:sonialindblom@gmail.com">sonialindblom@gmail.com</a></p>
+        
+    </div>
+    </div>
          
   `
      
